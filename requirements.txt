@@ -1,7 +1,9 @@
 appdirs==1.4.3
+gpiozero==1.3.2
 gTTS==1.2.0
 gTTS-token==1.1.1
 packaging==16.8
+picamera==1.13
 pprint==0.1
 pyglet==1.2.4
 pyparsing==2.2.0
