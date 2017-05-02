@@ -1,5 +1,5 @@
 import secrets
-from api.visual_recog import VisualRecog
+from api.ibm import VisualRecog
 # from tts.tts import TTS
 from camera.camera import Camera
 # from espeak import espeak
