@@ -23,6 +23,6 @@ if __name__ == '__main__':
     for label in labels:
         print(label.description)
     # ONLY FIRST LABEL FOR NOW
-    first_label = labels[0]
+    first_label = labels[0].description
     # Play first_label with english language, speed = fast/normal unless specified
     tts.play(text=first_label, language='en')
