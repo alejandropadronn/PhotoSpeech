@@ -10,5 +10,5 @@ class TTS(object):
     def play(self, text, language, slow=False):
           tts = gTTS(text=text, lang=language, slow=slow)
           tts.save(self.path)
-          os.system('mpg321 '+ self.path)
+          os.system('mpg321 -q '+ self.path)
           os.remove(self.path)
