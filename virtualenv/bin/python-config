@@ -1,4 +1,4 @@
-#!/Users/luispadron/Programming/Python/PhotoSpeech/photoEnv/bin/python
+#!/Users/deli/Desktop/PhotoSpeech/virtualenv/bin/python
 
 import sys
 import getopt
