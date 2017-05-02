@@ -7,6 +7,6 @@ class Camera(object):
         self.button = Button(17)
         self.camera = PiCamera()
     
-    def start_camera(self, save_to_file):
+    def start(self, save_to_file):
         self.button.wait_for_press()
         self.camera.capture(save_to_file)
