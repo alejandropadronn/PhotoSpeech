@@ -2,14 +2,21 @@ import secrets
 from api.visual_recog import VisualRecog
 # from tts.tts import TTS
 from camera.camera import Camera
+# from espeak import espeak
 
 if __name__ == '__main__':
     # Create the objects we need 
     vr = VisualRecog(secrets.IBM_API_KEY)
     camera = Camera()
-    photo_path = "test.jpg"
-    camera.start(photo_path)
-    vr.classify(photo_path)
     # tts = TTS()
-    # tts.play('en', 'test', 'test.mp3')
+
+    # Wait on photo
+    photo_path = "/home/pi/Desktop/PhotoSpeech/photo.jpeg"
+    camera.start(photo_path)
+    # Classify photo
+    classfied = vr.classify(photo_path)
+    pprint(classfied)
+    # espeak.synth(classfied)
+    # Play the text
+    # tts.play('en', , 'test.mp3')
     

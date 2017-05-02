@@ -8,5 +8,7 @@ class VisualRecog(object):
 
     def classify(self, file_location):
         with open(join(dirname(__file__), file_location), 'rb') as image_file:
-            img = self.visual_rec.classify(images_file=image_file)
-            pprint(img)
+            classified_data = self.visual_rec.classify(images_file=image_file)
+            imgs = classified_data['images']
+            classes = imgs[0]['classifiers'][0]['classes']
+            return classes[0]['class']
