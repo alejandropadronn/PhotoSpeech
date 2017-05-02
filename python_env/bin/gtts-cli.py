@@ -1,4 +1,4 @@
-#!/Users/deli/Desktop/PhotoSpeech/virtualenv/bin/python3.6
+#!/Users/luispadron/Programming/Python/PhotoSpeech/python_env/bin/python3.6
 
 from __future__ import print_function
 from gtts import gTTS

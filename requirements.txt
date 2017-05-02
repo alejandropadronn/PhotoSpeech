@@ -2,7 +2,10 @@ appdirs==1.4.3
 gTTS==1.2.0
 gTTS-token==1.1.1
 packaging==16.8
+pprint==0.1
 pyglet==1.2.4
 pyparsing==2.2.0
+pysolr==3.6.0
 requests==2.13.0
 six==1.10.0
+watson-developer-cloud==0.25.2
